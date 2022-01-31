@@ -1,0 +1,112 @@
+---
+title: "About Me"
+author: "Crystal Sparks"
+output:
+  word_document:
+    toc: yes
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+bibliography: references.bib
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Who I am and where I came from
+
+I was born and raised in Anniston, Alabama. I had always wanted to leave
+and when friends invited me to move to Colorado in 2010, I gladly
+accepted the opportunity. Here I decided to explore academia again but
+only had the confidence to get my toes wet. Community College lead me to
+an interest in biology which spiraled out of control into a B.S. in
+Biochemistry and Molecular Biology from Colorado State University, and
+then to PhD in Agricultural Biology, which a discipline in molecular
+weed science. I was more keen to wet lab until I was introduced to
+bioinformatics by inheriting an underutilized RNAseq data set. This
+inspired me to look for more data science and computational courses,
+such as this one, where I appreciate the biological context ##Put in a
+hypertext link to your undergraduate institution.
+
+My favorite leisure activities, like this:
+
+1.  Singing
+2.  Hiking
+3.  Volleyball
+4.  Video Games
+
+This image of me was taken at the Meow Wolf Convergence Station in
+Denver, CO. It was an artistic and fun adventure.
+
+```{r}
+knitr::include_graphics("images/meowwolf.jpeg", auto_pdf = TRUE)
+```
+
+# Research Interests
+
+My primary research interests involve exploring the molecular and
+biochemical mechanisms of herbicide resistance in weeds and in mutagenic
+crop lines.
+
+## Influential papers
+
+In my field we often classify mechanisms of resistance as target site or
+non-target site. One early and important paper came from my advisors PhD
+work. '@GainesToddA2010GACG' found a now commonly known target site
+mechanisms that involves multiple copies of the gene normally inhibited
+by the herbicide, in this case 50-200 fold increase, allowing the weed
+to easily overcome normal field applications of herbicide. Though it is
+unique in *Amaranthus palmeri* for more complex reasons, target site
+gene duplication itself has since been found in several species.
+
+On the other hand, resistance is not always caused by any change in the
+target site but rather a non-target mechanism. This may be a change in
+absorption and translocation of the herbicide, or detoxification through
+metabolic processes of enzyme families, as described by
+'@YuanJoshuaS2007Nhra'.
+
+## The mathematics behind my research
+
+These equations are commonly used in my field. The first on is the well
+known and historically renowned dilution equation. The other is the Hill
+equation which we commonly used with dose response curves to calculate
+the dose of herbicide that controls 50% of a population.
+
+$$
+C_1(V_1)=C_2(V_2)
+$$
+$$
+\frac{E}{E_\max} = \frac{1}{1+{(\frac{EC_{50}}{[A]})}}^{n}
+$$
+## My computing experience
+
+My computing experience involves many hours but not much expertise. I
+have taken the data science courses that are only 1/3 semester. One on
+basic linux and one on RNA-seq. I also took the python class, but I did
+not enjoy it. I inherited an RNA-seq project that I have spent a lot of
+time playing with. I also took the STAT511 which introduced me to some
+R-specific computation. I have ran a variant calling pipeline, and a few
+other random processes.
+
+## What I hope to get out of this class
+
+Give me a bullet list of three things:
+
+-   Best practices for file management
+-   How to use github for reproducibility
+-   Learning proper and cool ways to run common commands and
+    bioinformatics processes
+
+# Evaluating some R code
+
+Nothing fancy for today but here is a simple set of data and a base r histogram. 
+```{r}
+x <- rnorm(1500, mean=5, sd=1)
+hist(x)
+
+```
+
+# Citations
+
+
